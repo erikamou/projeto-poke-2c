@@ -1,9 +1,13 @@
 div {
      display:flex;
      flex-direction: row;
-     flex-wrap: wrap;
-
+     flex-wrap: nowrap;
+     background-color: red;
+     width: 400px;
+     height: 300px;
+     overflow:auto;
 }
+
 
 img {
     width:100px;
