@@ -1,0 +1,7 @@
+.Menu {
+    display: inline -flex;
+    flex-direction: row;
+    widht: 100%;
+    min-widht: 100%;
+
+}
