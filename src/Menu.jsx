@@ -1,27 +1,21 @@
-import './Menu.css'
+import { Navbar, Nav, Container } from 'react-bootstrap';
+
 const Menu = () => {
-
     return (
-        <div className="Menu">
-            <ul className="nav">
-                <li className="nav-item">
-                    <a className="nav-link active" href="/home">
-                        Home
-                    </a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link active" href="/pokeflex">
-                        Pokeflex
-                    </a>
-                    <li className="nav-item">
-                    <a className="nav-link active" href="/pokegrid">
-                        PokeGrid
-                    </a>
-                </li>
-                </li>
-            </ul>
-        </div>
-    )
-}
+        <Navbar bg="primary" variant="dark" expand="lg" className="rounded shadow-sm mb-4">
+            <Container>
+                <Navbar.Brand href="/home">Lula inácio da silva</Navbar.Brand>
+                <Navbar.Toggle aria-controls="menu-navbar-nav" />
+                <Navbar.Collapse id="menu-navbar-nav">
+                    <Nav className="me-auto">
+                        <Nav.Link href="/home">Home</Nav.Link>
+                        <Nav.Link href="/pokeflex">Pokeflex</Nav.Link>
+                        <Nav.Link href="/pokegrid">PokeGrid</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+    );
+};
 
-export default Menu
+export default Menu;
